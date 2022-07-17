@@ -21,10 +21,11 @@ header{
 /* Everything put in between header and footer */
 .content{
     flex: auto;
+    background-image: linear-gradient(#AFB3BF, #D993A6);
   }
 
 /* General style removal */
-ul{
+  ul{
     list-style: none;
   }
   
@@ -37,19 +38,19 @@ ul{
   }
 
 /* Navigation */
-nav{
-    /* background-color: #55163b; */
+  nav{
     display: flex;
     justify-content: end;
     align-items: center;
+    
   }
   
   nav a{
-    color: #fff;
+    color: #000000;
   }
   
   nav a:hover{
-    color: #36094e;
+    color: #5F4149;
     font-weight: bold;
   }
   
@@ -57,11 +58,12 @@ nav{
     display: flex;
     gap: 57px;
     padding: 24px 100px;
-    font-size: larger;
+    font-size: 30px;
+    font-weight: 400;
   }
 
 /* Introduction box */
-main{
+  main{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,45 +71,86 @@ main{
     color: #04070D;
   }
   
-  .hello{
-    font-size: 38px;
-  }
-  
   .introduction{
-    font-size: 38px;
+    font-size: 42px;
     padding-bottom: 8px;
   }
   
-  .title{
-    font-size: 24px;
+  .jobTitle{
+    font-size: 42px;
     padding-bottom: 16px;
     font-style: italic;
+    color: #5F4149;
   }
   
   .icons{
     display: flex;
     gap: 24px;
   }
-  
-  .skills{
-    padding: 38px;
-    border-radius: 25px;
+
+  .resume{
+    padding: 0px 10px;
+    margin: 2.5px 0px;
+    background-color: #000000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    
+  }
+
+  .resume a{
+    color: #918E90;
     font-size: 20px;
+    font-weight: 900;
   }
   
-  .skills p{
-    font-size: 38px;
-    padding-top: 16px;
+/* Content */
+
+.paragraphTitle{
+    font-size: 42px;
+    text-align: center;
+    padding: 40px 0px;
+
+    -webkit-text-decoration: black solid underline;
+    text-decoration: black solid underline;
+    -webkit-text-underline-position: under;
+    text-underline-position: under;
+    
   }
-  
+
+.aboutMe{
+  font-size: 24px;
+  text-align: center;
+  padding: 0px 200px;
+}
+
+.skillBubbles{
+  display: flex;
+  gap: 200px;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.bubble1,
+.bubble2,
+.bubble3,
+.bubble4{
+  background-color: #5F4149;
+  border: 1px solid #5F4149;
+  border-radius: 60px;
+  color: #fff;
+  padding: 40px;
+  font-size: 20px;
+}
+
 
   /* Footer */
 footer{
-    background-color: #55163b;
+    background-color: #5F4149;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
+    padding: 20px;
+    font-size: 20px;
   }
   
   footer,
