@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+body{
+    font-family: 'Edu NSW ACT Foundation', Verdana, Arial, cursive;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-image: url(../images/tablePlantMediumCropped.jpg);
+    background-repeat: no-repeat;
+    /* background-position: top; */
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+
+/* Everything put in between header and footer */
+.content{
+    flex: auto;
+  }
+
+/* General style removal */
+ul{
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  i{
+    color: black;
+  }
+
+/* Navigation */
+nav{
+    /* background-color: #55163b; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  
+  nav a{
+    color: #fff;
+  }
+  
+  nav a:hover{
+    color: #36094e;
+    font-weight: bold;
+  }
+  
+  nav ul{
+    display: flex;
+    gap: 57px;
+    padding: 24px 100px;
+    font-size: larger;
+  }
+
+/* Introduction box */
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 100px;
+    color: #04070D;
+  }
+  
+  .hello{
+    font-size: 38px;
+  }
+  
+  .introduction{
+    font-size: 38px;
+    padding-bottom: 8px;
+  }
+  
+  .title{
+    font-size: 24px;
+    padding-bottom: 16px;
+    font-style: italic;
+  }
+  
+  .icons{
+    display: flex;
+    gap: 24px;
+  }
+  
+  .skills{
+    padding: 38px;
+    border-radius: 25px;
+    font-size: 20px;
+  }
+  
+  .skills p{
+    font-size: 38px;
+    padding-top: 16px;
+  }
+  
+
+  /* Footer */
+footer{
+    background-color: #55163b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+  }
+  
+  footer,
+  footer i,
+  footer a{
+    color: #fff;
+  }
