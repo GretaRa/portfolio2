@@ -185,40 +185,6 @@ header{
   font-size: 1.3rem;
 }
 
-
-/* 
-.box{
-  background-color: #5F4149;
-  max-width: 35%;
-  margin: 3rem;
-  padding: 1rem;
-  border: 0.1rem solid #5F4149;
-  border-radius: 1.5rem;
-  color: #fff;
-  font-size: 1.5rem;
-  text-align: center;
-  aspect-ratio: ;
-}
-
-.box img,
-.boxTitle,
-.boxDescription{
-  max-width: 100%;
-}
-
-.box img{
-  border-radius: 1.5rem;
-}
-
-.boxTitle{
-  padding: 0.5rem;
-  font-size: 2rem;
-}
-
-.boxDescription{
-  padding: 0.5em;
-} */
-
   /* Footer */
 footer{
     background-color: #5F4149;
