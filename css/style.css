@@ -21,6 +21,7 @@ header{
 .content{
     flex: auto;
     background-image: linear-gradient(#AFB3BF, #D993A6);
+    padding-bottom: 2rem;
   }
 
 /* General style removal */
@@ -59,6 +60,10 @@ header{
     padding: 0.5em 2em;
     font-size: 2rem;
     /* font-size:clamp(1rem, -0.8750rem + 0.83333vw, 3.5rem); */
+  }
+
+  .navProjects{
+    background-color: #AFB3BF;
   }
 
 /* Introduction box */
