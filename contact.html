@@ -29,20 +29,21 @@
         </nav>
         <div class="content">
             <div class="contactForm">
-                <form action="">
+                <form action="https://formsubmit.co/189b9a57ad34a7b7938dc36f728347ca" method="POST">
                     <label for="name">(Full) Name</label>
                     <input type="text" id="name" name="name" placeholder="Your name..">
 
-                    <label for="yourEmail">Your email address</label>
-                    <input type="email" id="yourEmail" name="yourEmail" placeholder="Enter your email address..">
+                    <label for="yourEmail">Your email address*</label>
+                    <input type="email" id="yourEmail" name="yourEmail" placeholder="Enter your email address.." required>
 
                     <label for="subject">Subject</label>
                     <input type="text" id="subject" name="subject" placeholder="Subject of your message..">
 
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Your message.." style="height:200px"></textarea>
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" placeholder="Your message.." style="height:200px" required ></textarea>
 
                     <input type="submit" value="Submit">
+                    <p>*Required</p>
                 </form>
             </div>
     
