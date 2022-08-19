@@ -38,6 +38,10 @@ header{
   }
 
 /* Navigation */
+  nav ul li .active-page{
+  color: #5F4149;
+  }
+
   nav{
     display: flex;
     justify-content: end;
@@ -156,6 +160,15 @@ header{
   justify-items: center;
 }
 
+.box:hover,
+.bubble1:hover,
+.bubble2:hover,
+.bubble3:hover,
+.bubble4:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .box{
   display: flex;
   flex-direction: column;
@@ -182,7 +195,11 @@ header{
 }
 
 .boxDescription{
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 /* Contact form */
