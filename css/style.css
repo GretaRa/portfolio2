@@ -21,7 +21,6 @@ header{
 .content{
     flex: auto;
     background-image: linear-gradient(#AFB3BF, #D993A6);
-    padding-bottom: 2rem;
   }
 
 /* General style removal */
@@ -116,6 +115,7 @@ header{
 .paragraphTitle{
     text-align: center;
     padding: 1em 0;
+    margin-bottom: 2rem;
 
     -webkit-text-decoration: black solid underline;
     text-decoration: black solid underline;
@@ -156,7 +156,7 @@ header{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5%;
-  margin: 5%;
+  margin-bottom: 10%;
   justify-items: center;
 }
 
