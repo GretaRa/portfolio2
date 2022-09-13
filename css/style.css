@@ -115,7 +115,7 @@ header{
 
   .resume{
     padding: 0 1em;
-    margin: 2.5px 0;
+    margin: 0.156rem 0;
     background-color: #000000;
     border: 1px solid #000000;
     border-radius: 5px;
@@ -140,6 +140,10 @@ header{
     -webkit-text-underline-position: under;
     text-underline-position: under;
     
+  }
+  
+  #mobileShow{
+    display: none;
   }
 
 .aboutMe{
@@ -226,7 +230,7 @@ header{
   border-radius: 2rem;
   background-color: #5F4149;
   padding: 3rem;
-  margin: 5% 20%;
+  margin: 5% 10%;
 }
 
 form{
@@ -301,7 +305,17 @@ footer{
 
   }
 
-  @media (max-width: 760px) {
+
+  @media (max-width: 760px){
+
+    #desktopShow{
+      display: none;
+    }
+
+    #mobileShow{
+      display: block;
+    }
+
     .skillBubbles{
       display: grid;
       grid-template-columns: repeat(2,1fr);
@@ -309,7 +323,17 @@ footer{
       margin: 5%;
       justify-items: center;
     }
-    
+
+    main{
+      justify-content: center;
+      
+    }
+
+    .projectShowcase{
+      grid-template-columns: repeat(1, 1fr);
+      margin-bottom: 5rem;
+    }
+
     /* Hamburger menu show */
     .hamburger{
       display: block;
@@ -334,7 +358,7 @@ footer{
       padding: 0;
       gap: 0;
       flex-direction: column;
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(5px);
       width: 100%;
       text-align: center;
       transition: 0.3s;
@@ -347,4 +371,9 @@ footer{
     .navMenu.active{
       right:0;
     }
+
+    footer{
+      font-size: 1.2rem;
+    }
   }
+    
