@@ -177,8 +177,8 @@ header{
 .projectShowcase{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5%;
-  margin-bottom: 10%;
+  gap: 3rem;
+  margin: 4%;
   justify-items: center;
 }
 
@@ -230,7 +230,7 @@ header{
   border-radius: 2rem;
   background-color: #5F4149;
   padding: 3rem;
-  margin: 5% 10%;
+  margin: 5% 15%;
 }
 
 form{
@@ -299,10 +299,6 @@ footer{
       color: #AFB3BF;
     }
 
-    .projectShowcase{
-      flex-wrap: wrap;
-    }
-
   }
 
 
@@ -330,8 +326,8 @@ footer{
     }
 
     .projectShowcase{
-      grid-template-columns: repeat(1, 1fr);
-      margin-bottom: 5rem;
+      grid-template-columns: repeat(1,1fr);
+      gap: 2rem;
     }
 
     /* Hamburger menu show */
@@ -370,6 +366,10 @@ footer{
 
     .navMenu.active{
       right:0;
+    }
+    
+    .contactForm{
+      margin: 5%;
     }
 
     input[type=submit]{
