@@ -37,7 +37,7 @@ header{
   }
 
 /* Navigation */
-  nav ul li .active-page{
+  .navItem .active-page{
   color: #5F4149;
   }
 
@@ -45,7 +45,7 @@ header{
     display: flex;
     justify-content: end;
     align-items: center;
-    
+    background-color: #AFB3BF;
   }
   
   nav a{
@@ -57,15 +57,30 @@ header{
     text-decoration: underline;
   }
   
-  nav ul{
+  .navMenu{
     display: flex;
     gap: 3rem;
     padding: 0.5em 2em;
     font-size: 2rem;
   }
 
-  .navProjects{
-    background-color: #AFB3BF;
+
+  /* Hamburger menu for smaller screen */
+
+  .hamburger{
+    display: none;
+    cursor: pointer;
+    margin: 1rem;
+  }
+
+  .bar{
+    display: block;
+    width: 1.5rem;
+    height: 0.18rem;
+    margin: 0.32rem auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000000;
   }
 
 /* Introduction box */
@@ -289,5 +304,43 @@ footer{
       row-gap: 20%;
       margin: 5%;
       justify-items: center;
+    }
+    
+    /* Hamburger menu show */
+    .hamburger{
+      display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navMenu{
+      position: fixed;
+      right: -100%;
+      top: 0;
+      padding: 0;
+      gap: 0;
+      flex-direction: column;
+      backdrop-filter: blur(10px);
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .navItem{
+      margin: 1rem 0;
+    }
+
+    .navMenu.active{
+      right:0;
     }
   }

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Greta Rakauskaite</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="JS/script.js"></script>
+    <script src="JS/script.js" defer></script>
     <script src="https://kit.fontawesome.com/0c7872620e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;600&display=swap" rel="stylesheet">
@@ -17,17 +17,22 @@
   <body>
     <header>
       <nav>
-        <ul>
-          <li>
-            <a href="index.html" class="active-page">Home</a>
+        <ul class="navMenu">
+          <li class="navItem">
+            <a href="index.html" class=".navLink" class="active-page">Home</a>
           </li>
-          <li>
-            <a href="allProjects.html">All Projects</a>
+          <li class="navItem">
+            <a href="allProjects.html" class=".navLink">All Projects</a>
           </li>
-          <li>
-            <a href="contact.html">Contact Me</a>
+          <li class="navItem">
+            <a href="contact.html" class=".navLink">Contact Me</a>
           </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
       <main>
         <div class="about">
