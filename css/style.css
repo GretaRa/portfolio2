@@ -47,6 +47,10 @@ header{
     align-items: center;
     background-color: #AFB3BF;
   }
+
+  #navCustom{
+    background-color: transparent;
+  }
   
   nav a{
     color: #000000;
