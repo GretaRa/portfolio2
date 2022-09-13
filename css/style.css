@@ -372,6 +372,10 @@ footer{
       right:0;
     }
 
+    input[type=submit]{
+      margin-right: 0;
+    }
+
     footer{
       font-size: 1.2rem;
     }
