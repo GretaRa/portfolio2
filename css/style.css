@@ -17,7 +17,7 @@ header{
     background-size: cover;
 }
 
-/* Everything put in between header and footer */
+/* Everything stays in between header and footer */
 .content{
     flex: auto;
     background-image: linear-gradient(#AFB3BF, #D993A6);
@@ -62,7 +62,6 @@ header{
     gap: 3rem;
     padding: 0.5em 2em;
     font-size: 2rem;
-    /* font-size:clamp(1rem, -0.8750rem + 0.83333vw, 3.5rem); */
   }
 
   .navProjects{
@@ -125,7 +124,7 @@ header{
   }
 
 .aboutMe{
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   text-align: center;
   max-width: 75ch;
   margin-left: auto;
