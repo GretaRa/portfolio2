@@ -1,3 +1,11 @@
+:root{
+  --dark-color: #5F4149;
+  --grey-clr: #AFB3BF;
+  --light-pink-clr: #D993A6;
+  --black-clr: #000000;
+  --white-clr: #ffffff;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -20,7 +28,7 @@ header{
 /* Everything stays in between header and footer */
 .content{
     flex: auto;
-    background-image: linear-gradient(#AFB3BF, #D993A6);
+    background-image: linear-gradient(var(--grey-clr), var(--light-pink-clr));
   }
 
 /* General style removal */
@@ -33,19 +41,19 @@ header{
   }
   
   i{
-    color: black;
+    color: var(--black-clr);
   }
 
 /* Navigation */
   .navItem .active-page{
-  color: #5F4149;
+  color: var(--dark-color);
   }
 
   nav{
     display: flex;
     justify-content: end;
     align-items: center;
-    background-color: #AFB3BF;
+    background-color: var(--grey-clr);
   }
 
   #navCustom{
@@ -53,11 +61,11 @@ header{
   }
   
   nav a{
-    color: #000000;
+    color: var(--black-clr);
   }
   
   nav a:hover{
-    color: #5F4149;
+    color: var(--dark-color);
     text-decoration: underline;
   }
   
@@ -84,7 +92,7 @@ header{
     margin: 0.32rem auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #000000;
+    background-color: var(--black-clr);
   }
 
 /* Introduction box */
@@ -93,7 +101,7 @@ header{
     justify-content: space-between;
     align-items: center;
     margin: 3rem 6.25rem;
-    color: #04070D;
+    color: var(--black-clr);
   }
 
   .introduction,
@@ -105,7 +113,7 @@ header{
   .jobTitle{
     padding-bottom: 1rem;
     font-style: italic;
-    color: #5F4149;
+    color: var(--dark-color);
   }
   
   .icons{
@@ -116,8 +124,8 @@ header{
   .resume{
     padding: 0 1em;
     margin: 0.156rem 0;
-    background-color: #000000;
-    border: 1px solid #000000;
+    background-color: var(--black-clr);
+    border: 1px solid var(--black-clr);
     border-radius: 5px;
     
   }
@@ -166,10 +174,10 @@ header{
 .bubble2,
 .bubble3,
 .bubble4{
-  background-color: #5F4149;
-  border: 1px solid #5F4149;
+  background-color: var(--dark-color);
+  border: 1px solid var(--dark-color);
   border-radius: 3em;
-  color: #fff;
+  color: var(--white-clr);
   padding: 2em;
   font-size: 1.5rem;
 }
@@ -198,8 +206,8 @@ header{
   gap: 0.5rem;
   padding: 4%;
   margin: 0 1rem;
-  background-color: #5F4149;
-  color: #fff;
+  background-color: var(--dark-color);
+  color: var(--white-clr);
   border-radius: 2rem;
   max-width: 35rem;
   text-align: center;
@@ -228,7 +236,7 @@ header{
 /* Contact form */
 .contactForm {
   border-radius: 2rem;
-  background-color: #5F4149;
+  background-color: var(--dark-color);
   padding: 3rem;
   margin: 5% 15%;
 }
@@ -238,13 +246,13 @@ form{
   flex-direction: column;
   gap: 1rem;
   font-size: 1.7rem;
-  color: #fff;
+  color: var(--white-clr);
 }
 
 input[type=text], input[type=email], select, textarea {
   width: 100%;
   padding: 1rem;
-  border: 0.1rem solid #5F4149;
+  border: 0.1rem solid var(--dark-color);
   border-radius: 0.5rem;
   box-sizing: border-box;
   resize: vertical;
@@ -269,7 +277,7 @@ input[type=submit] {
 
   /* Footer */
 footer{
-    background-color: #5F4149;
+    background-color: var(--dark-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -280,13 +288,13 @@ footer{
   footer,
   footer i,
   footer a{
-    color: #fff;
+    color: var(--white-clr);
   }
 
   @media (max-width: 1245px){
     header{
       background-image: none;
-      background-color: #AFB3BF;
+      background-color: var(--grey-clr);
       min-height: fit-content;
     }
 
@@ -296,7 +304,7 @@ footer{
     }
 
     .resume a{
-      color: #AFB3BF;
+      color: var(--grey-clr);
     }
 
   }
