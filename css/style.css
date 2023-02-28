@@ -174,10 +174,7 @@ main{
   margin-right: 2rem;
 }
 
-.bubble1,
-.bubble2,
-.bubble3,
-.bubble4{
+.bubble{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,10 +198,7 @@ main{
 }
 
 .box:hover,
-.bubble1:hover,
-.bubble2:hover,
-.bubble3:hover,
-.bubble4:hover{
+.bubble:hover{
   transform: scale(1.1);
   cursor: pointer;
 }
